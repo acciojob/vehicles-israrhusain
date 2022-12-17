@@ -4,12 +4,12 @@ public class F1 extends Car {
    
    
 
-    private static int gears;
+    private static  int gears;
 
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-         super(name,gears, gears, isManual);
+         super(name,gears,gears, isManual);
          this.gears=getgears();
         
         
