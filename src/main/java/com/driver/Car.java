@@ -18,12 +18,7 @@ public class Car extends Vehicle {
     
          
     }
-     public void setName(String name){
-        this.name=name;
-     }
-     public String getName(String name){
-        return this.name;
-     }
+     
 
      public void setisManual(boolean isManual){
         this.isManual=isManual;
