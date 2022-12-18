@@ -10,6 +10,78 @@ public class Car extends Vehicle {
     private int wheels;
     private int seats;
 
+    
+
+    public String getType() {
+        return type;
+    }
+
+  public void setType(String type) {
+        this.type = type;
+    }
+
+
+  public int getDoors() {
+        return doors;
+    }
+
+
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+
+
+    public int getGears() {
+        return gears;
+    }
+
+
+
+    public void setGears(int gears) {
+        this.gears = gears;
+    }
+
+
+
+
+    public int getCurrentGear() {
+        return currentGear;
+    }
+
+
+
+    public void setCurrentGear(int currentGear) {
+        this.currentGear = currentGear;
+    }
+
+
+
+    public int getWheels() {
+        return wheels;
+    }
+
+
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+
+
+    public int getSeats() {
+        return seats;
+    }
+
+
+
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
+
+
+
     public Car(String name, int gears, boolean isManual ,int wheels, int doors, String type, int seats ) {
         super(name);
         this.isManual=isManual;
@@ -18,21 +90,41 @@ public class Car extends Vehicle {
         this.doors=doors;
         this.wheels=wheels;
         this.type=type;
-        currentGear=1;
+        this.currentGear=1;
         //Hint: Car extends Vehicle
     
-         
+       
+        
     }
-     
 
+
+
+    
+  public boolean isManual(){
+    return isManual;
+}
+     
+  public void setManual(boolean isManual){
+       this.isManual=isManual;
+  }
+
+ 
 
     public void changeGear(int newGear){
-         this.currentGear=newGear;
+           currentGear=newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
          move(newSpeed,newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
+    }
+
+    public boolean isManual() {
+        return isManual;
+    }
+
+    public void setManual(boolean isManual) {
+        this.isManual = isManual;
     }
 }
